@@ -44,11 +44,11 @@ import { DOMParser, XMLSerializer } from "https://code4fukui.github.io/xmldom-es
 const source = `<xml xmlns="a">
 	<child>test</child>
 	<child/>
-</xml>`
+</xml>`;
 
-const doc = new DOMParser().parseFromString(source, 'text/xml')
+const doc = new DOMParser().parseFromString(source, "text/xml");
 
-const serialized = new XMLSerializer().serializeToString(doc)
+const serialized = new XMLSerializer().serializeToString(doc);
 ```
 
 ## API Reference
