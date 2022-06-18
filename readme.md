@@ -35,15 +35,11 @@ This project was forked from it's [original source](https://github.com/jindw/xml
 
 ## Usage
 
-### Install:
-
-> npm install @xmldom/xmldom
-
 ### Example:
 
 [In NodeJS](examples/nodejs/src/index.js)
 ```javascript
-const { DOMParser, XMLSerializer } = require('@xmldom/xmldom')
+import { DOMParser, XMLSerializer } from "https://code4fukui.github.io/xmldom-es/xmldom.js";
 
 const source = `<xml xmlns="a">
 	<child>test</child>
@@ -53,12 +49,6 @@ const source = `<xml xmlns="a">
 const doc = new DOMParser().parseFromString(source, 'text/xml')
 
 const serialized = new XMLSerializer().serializeToString(doc)
-```
-
-Note: in Typescript ~and ES6~(see #316) you can use the `import` approach, as follows:
-
-```typescript
-import { DOMParser } from '@xmldom/xmldom'
 ```
 
 ## API Reference
